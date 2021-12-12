@@ -1,7 +1,3 @@
-; Get the current keyboard layout to disable this when we're already on query
-; qwerty - 4026663945
-; dvorak - 67699721
-
 Loop {
   InputLocaleID := getKeyboardLayout()
 

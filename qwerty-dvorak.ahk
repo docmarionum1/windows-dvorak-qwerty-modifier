@@ -1,10 +1,13 @@
+; This script is from:
+; https://www.autohotkey.com/board/topic/4227-remapping-modifiers-to-qwerty-on-a-dvorak-keyboard/?p=202224
+
 ﻿; Use Scroll Lock to control keyboard ("on" is Dvorak)
 ; and do not let Control, Alt, or Win modifiers act on Dvorak
 Loop {
-	If GetKeyState("ScrollLock", "T") 
-	and !GetKeyState("Control") 
-	and !GetKeyState("Alt") 
-	and !GetKeyState("LWin") 
+	If GetKeyState("ScrollLock", "T")
+	and !GetKeyState("Control")
+	and !GetKeyState("Alt")
+	and !GetKeyState("LWin")
 	and !GetKeyState("RWin") {
 		Suspend, Off
 	} else {
